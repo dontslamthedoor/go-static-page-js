@@ -14,7 +14,7 @@
     <a href="/contact" class="text-blue-500">Contact</a>
 </nav>
 <div class="content p-4 bg-white rounded shadow" id="content">
-    {{ template "content" . }}
+    {{ block "content" . }}{{ end }}
 </div>
 </body>
 </html>
