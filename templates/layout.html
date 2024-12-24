@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Content Application</title>
+    <link href="/static/css/tailwind.css" rel="stylesheet">
+    <link href="/static/css/main.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 text-gray-900">
+<nav class="bg-white shadow p-4 mb-4 flex justify-between">
+    <a href="/" class="text-blue-500">Home</a>
+    <a href="/about" class="text-blue-500">About</a>
+    <a href="/contact" class="text-blue-500">Contact</a>
+</nav>
+<div class="content p-4 bg-white rounded shadow" id="content">
+    {{ template "content" . }}
+</div>
+</body>
+</html>
