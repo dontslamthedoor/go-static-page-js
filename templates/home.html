@@ -1,4 +1,29 @@
 {{ define "content" }}
-    <h1 class="custom-header">Home Page</h1>
-    <p>Welcome to the home page!</p>
+<div class="flex w-full h-screen">
+    <!-- Sidebar Container -->
+    <div class="w-1/4 bg-slate-950 p-6 flex flex-col gap-4">
+        <h2 class="text-xl font-bold text-green-400">Sidebar</h2>
+        <nav class="flex flex-col gap-2 text-slate-300">
+            <a href="#" class=" hover:text-pink-400">Link 1</a>
+            <a href="#" class=" hover:text-pink-400">Link 2</a>
+            <a href="#" class=" hover:text-pink-400">Link 3</a>
+        </nav>
+    </div>
+
+    <!-- Main Content Container -->
+    <div class="w-3/4 bg-slate-950 p-6">
+        <h1 class="text-3xl font-bold text-purple-400">Main Content</h1>
+        <p class="mt-4 text-gray-300">This is the main content area. TailwindCSS makes styling effortless with utility classes. You can easily add padding, margins, colors, and more with predefined classes, avoiding repetitive custom CSS.</p>
+        <div class="mt-6 grid grid-cols-2 gap-4 font-bold font-mono">
+            <div class="bg-black p-4 rounded-md text-center">Card 1</div>
+            <div class="bg-black p-4 rounded-md text-center">Card 2</div>
+            <div class="bg-black shadow-xl p-4 rounded-md text-center">Card 3</div>
+            <div class="bg-black p-4 rounded-md text-center">Card 4</div>
+            <div>
+                fsdfsdf
+                <div>dfd</div>
+            </div>
+        </div>
+    </div>
+</div>
 {{ end }}

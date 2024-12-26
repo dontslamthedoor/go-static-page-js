@@ -4,16 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dynamic Content Application</title>
-    <link href="/static/css/tailwind.css" rel="stylesheet">
-    <link href="/static/css/main.css" rel="stylesheet">
+    <link href="/static/css/styles.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+<!-- Font Awesome Link -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+  integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+  crossorigin="anonymous"
+/>
 </head>
-<body class="bg-gray-100 text-gray-900">
-<nav class="bg-white shadow p-4 mb-4 flex justify-between">
-    <a href="/" class="text-blue-500">Home</a>
-    <a href="/about" class="text-blue-500">About</a>
-    <a href="/contact" class="text-blue-500">Contact</a>
-</nav>
-<div class="content p-4 bg-white rounded shadow" id="content">
+<body class="bg-black text-white text-center pt-8">
+    <nav class="flex justify-center">
+        <ul class="flex space-x-4 gap-12 font-bold">
+            <a href="/" class="hover:text-gray-400">Home</a>
+            <a href="/about" class="hover:text-gray-400">About</a>
+            <a href="/contact" class="hover:text-gray-400">Contact</a>
+            <a href="/projects" class="hover:text-gray-400">Projects</a>
+        </ul>
+    </nav>
+
+    
+</div>  
+<div class="container min-w-80 p-4 rounded shadow mx-auto" id="content">
     {{ block "content" . }}{{ end }}
 </div>
 </body>
