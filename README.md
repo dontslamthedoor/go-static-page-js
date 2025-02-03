@@ -1,4 +1,4 @@
-<h1>Static webpage written with Golang.</h1>
+<h1>Serve your static assets with a Go Web Server</h1>
 <h4>Uses the net/http and html/template official packages.</h4>
 
 <h5>fork the repo and run <code>go run main.go</code> (make sure Go 1.18 or later is installed)</h5>
